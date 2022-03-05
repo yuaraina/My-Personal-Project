@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+body {
+  margin: 0;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+body h1 {
+  color: #28786c !important;
+  font-weight: 500;
+}
+
+.login {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url("mind.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.btn-login {
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+  color: #fff !important;
+  background-color: #28786c !important;
+  border-color: #28786c !important;
+}

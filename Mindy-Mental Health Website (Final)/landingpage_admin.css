@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+body {
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/* sidebar */
+
+.sidebar {
+  position: fixed;
+  top: 2rem;
+  /* rtl:raw:
+    right: 0;
+    */
+  bottom: 0;
+  /* rtl:remove */
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(25, 163, 48, 0.1);
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #487c74;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #487c74;
+}
+
+.sidebar .nav-link.active {
+  color: #2470dc;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.container-fluid .row .bg-light {
+  background-color: #f0f0f0 !important;
+}
+
+/* Navbar */
+
+.navbar .container-fluid {
+  background-color: #cfe9e5 !important;
+}
+
+.navbar .navbar-toggler {
+  top: 0.25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: 0.75rem 1rem;
+  border-width: 0;
+  border-radius: 0.75rem;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+}
+
+.px-md-4 .row .col-lg-4 {
+  text-align: center;
+  justify-content: center;
+}
+
+.px-md-4 .progress .progress-bar {
+  background-color: #35b9dc !important;
+}
+
+.px-md-4 .progress .bg-success {
+  background-color: #a6da4c !important;
+}
+
+.px-md-4 .progress .bg-info {
+  background-color: #dc3545 !important;
+}
+
+.profile-dropdown {
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 3px;
+}
+
+.profile-dropdown input[type="checkbox"] {
+  display: none;
+}
+
+.profile-dropdown input[type="checkbox"]:checked ~ ul {
+  display: block;
+  animation: pulse 0.5s;
+}
+
+.profile-dropdown input[type="checkbox"]:checked ~ label i {
+  color: #cfe9e5;
+}
+.profile-dropdown input[type="checkbox"]:checked ~ label:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: calc(50% - 10px);
+  display: block;
+  border-style: solid;
+  border-width: 7px 10px 0 10px;
+  width: 0;
+  height: 0;
+}
+
+.profile-dropdown img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1rem;
+  margin: 0.5rem 0.75rem 0.5rem 0.5rem;
+  border-radius: 50%;
+}
+
+.profile-dropdown span {
+  display: inline-block;
+  vertical-align: sub;
+  width: 45px;
+  margin-right: 0.25rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.profile-dropdown ul {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.profile-dropdown ul li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: #737373;
+  font-size: 1rem;
+}
+
+.profile-dropdown ul li a i {
+  font-size: 0.5rem;
+  vertical-align: middle;
+  margin: 0 0.75rem 0 -0.25rem;
+}
+
+.profile-dropdown ul li a:hover {
+  background: #e5e5e5;
+}
+
+.profile-dropdown ul li:first-child a:hover {
+  border-radius: 3px 3px 0 0;
+}
+
+.profile-dropdown ul li:last-child a:hover {
+  border-radius: 0 0 3px 3px;
+}
+
+.profile-dropdown > label {
+  position: relative;
+  height: 3.5rem;
+  display: block;
+  text-decoration: none;
+  background: transparent;
+  color: #cfe9e5;
+  box-sizing: border-box;
+  padding: 0.2rem;
+  float: right;
+  border-radius: 0 3px 3px 0;
+}
+
+.profile-dropdown > label i {
+  color: #cfe9e5;
+  font-size: 0.2rem;
+}
+
+.profile-dropdown:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.px-md-4 .container {
+  box-sizing: border-box;
+}
+
+h3 {
+  color: #656c72 !important;
+}
+
+h1 {
+  color: #28786c;
+}
+
+.container footer {
+  text-align: center;
+  justify-content: center;
+}
+
+.tambah_produk .btn-secondary {
+  color: #fff;
+  border-color: #28786c !important;
+  background-color: #28786c !important;
+}
